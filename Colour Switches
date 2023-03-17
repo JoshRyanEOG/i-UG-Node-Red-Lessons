@@ -1,0 +1,137 @@
+[
+    {
+        "id": "4a0f3664775fe159",
+        "type": "node-hue-in",
+        "z": "b0e94f292997799c",
+        "server": "166eeb02cb85b296",
+        "lightID": "light1",
+        "name": "",
+        "x": 810,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "1bc2859dc80af5fe",
+        "type": "inject",
+        "z": "b0e94f292997799c",
+        "name": "Purple",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\": true, \"bri\": 100, \"hue\": 300}",
+        "payloadType": "json",
+        "x": 570,
+        "y": 1880,
+        "wires": [
+            [
+                "4a0f3664775fe159"
+            ]
+        ]
+    },
+    {
+        "id": "0de40b926e75ae10",
+        "type": "inject",
+        "z": "b0e94f292997799c",
+        "name": "Pink",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\": true, \"bri\": 100, \"hue\": 350}",
+        "payloadType": "json",
+        "x": 570,
+        "y": 1920,
+        "wires": [
+            [
+                "4a0f3664775fe159"
+            ]
+        ]
+    },
+    {
+        "id": "dc862b66ed2f4e27",
+        "type": "inject",
+        "z": "b0e94f292997799c",
+        "name": "Cyan",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\": true, \"bri\": 100, \"hue\": 200}",
+        "payloadType": "json",
+        "x": 570,
+        "y": 1960,
+        "wires": [
+            [
+                "4a0f3664775fe159"
+            ]
+        ]
+    },
+    {
+        "id": "7a5a8e6cf46fcb0d",
+        "type": "inject",
+        "z": "b0e94f292997799c",
+        "name": "Green",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"on\": true, \"bri\": 100, \"hue\": 100}",
+        "payloadType": "json",
+        "x": 570,
+        "y": 2000,
+        "wires": [
+            [
+                "4a0f3664775fe159"
+            ]
+        ]
+    },
+    {
+        "id": "166eeb02cb85b296",
+        "type": "node-hue-bridge",
+        "name": "Hue Bridge",
+        "address": "172.16.1.60",
+        "key": "sizzq6Q5yd-R6Vtuyri7MC5vY81hASb7pZ-ZRRnw",
+        "interval": "10000"
+    }
+]
